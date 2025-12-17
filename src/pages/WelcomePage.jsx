@@ -8,7 +8,9 @@ function WelcomePage() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    navigate('/profile')
+    e.stopPropagation()
+    console.log('Login submitted - navigating to profile page')
+    navigate('/profile', { replace: false })
   }
 
   return (
