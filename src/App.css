@@ -90,7 +90,7 @@
 /* Main Content Section */
 .main-content {
   flex: 1;
-  background: url('/dizzyultadv/images/backgroundmain.png') lightgray 50% / cover no-repeat;
+  background: url('/dizzyultadv/images/BackgroundMain.png') lightgray 50% / cover no-repeat;
   display: flex;
   height: 515px;
   padding: var(--sds-size-space-4000, 40px) var(--sds-size-space-600, 60px);
@@ -120,7 +120,7 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #200;
-  font-family: "Climate Crisis", sans-serif;
+  font-family: "Climate Crisis";
   font-size: var(--sds-typography-title-hero-size, 72px);
   font-style: normal;
   font-weight: 400;
