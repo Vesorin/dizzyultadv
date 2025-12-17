@@ -131,7 +131,7 @@ function LevelsPage() {
               <span className="search-icon">🔍</span>
             </div>
             <div className="nav-buttons">
-              <button type="button" className="nav-button">
+              <button type="button" className="nav-button" onClick={() => navigate('/daily')}>
                 <span>✓</span> Daily
               </button>
               <button type="button" className="nav-button">Levels completed</button>
