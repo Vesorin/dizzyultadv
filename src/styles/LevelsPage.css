@@ -274,6 +274,7 @@
 
 .nav-button span {
   margin-right: 6px;
+  pointer-events: none;
 }
 
 /* Levels Grid */

@@ -11,6 +11,20 @@ function LevelsPage() {
     navigate('/achievements')
   }
   
+  const handleDailyClick = (e) => {
+    if (e) {
+      e.preventDefault()
+      e.stopPropagation()
+    }
+    try {
+      console.log('Navigating to daily challenge page')
+      navigate('/daily', { replace: false })
+    } catch (error) {
+      console.error('Navigation error:', error)
+      window.location.href = '/dizzyultadv/daily'
+    }
+  }
+  
   const levels = [
     {
       levelNumber: 1,
@@ -131,7 +145,11 @@ function LevelsPage() {
               <span className="search-icon">🔍</span>
             </div>
             <div className="nav-buttons">
-              <button type="button" className="nav-button" onClick={() => navigate('/daily')}>
+              <button 
+                type="button" 
+                className="nav-button" 
+                onClick={handleDailyClick}
+              >
                 <span>✓</span> Daily
               </button>
               <button type="button" className="nav-button">Levels completed</button>
