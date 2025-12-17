@@ -1,0 +1,74 @@
+.achievement-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #FFFACD; /* Light yellow/beige */
+  border: 2px solid #90EE90; /* Light green border */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card.clicked {
+  background-color: #E6E6FA; /* Light purple/lavender */
+  border-color: #9370DB; /* Medium purple */
+}
+
+.achievement-image {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.achievement-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #DDA0DD 0%, #9370DB 100%);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.achievement-image-placeholder::before {
+  content: '🏆';
+  font-size: 40px;
+  opacity: 0.5;
+}
+
+.achievement-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.achievement-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #520303; /* Reddish-brown */
+  margin: 0;
+}
+
+.achievement-card.clicked .achievement-title {
+  color: #4B0082; /* Dark purple */
+}
+
+.achievement-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.achievement-card.clicked .achievement-description {
+  color: #555;
+}
+

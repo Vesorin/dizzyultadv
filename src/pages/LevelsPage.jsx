@@ -1,9 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import LevelCard from '../components/LevelCard'
 import '../styles/LevelsPage.css'
 
 function LevelsPage() {
+  const navigate = useNavigate()
   const levels = [
     {
       levelNumber: 1,
@@ -128,7 +130,7 @@ function LevelsPage() {
                 <span>✓</span> Daily
               </button>
               <button className="nav-button">Levels completed</button>
-              <button className="nav-button">Achievements</button>
+              <button className="nav-button" onClick={() => navigate('/achievements')}>Achievements</button>
               <button className="nav-button">Review</button>
             </div>
           </div>
