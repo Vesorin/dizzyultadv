@@ -90,7 +90,7 @@
 /* Main Content Section */
 .main-content {
   flex: 1;
-  background: url('/dizzyultadv/images/BackgroundMain.png') lightgray 50% / cover no-repeat;
+ background-image: url("/images/BackgroundMain.png");
   display: flex;
   height: 515px;
   padding: var(--sds-size-space-4000, 40px) var(--sds-size-space-600, 60px);
