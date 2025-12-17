@@ -21,8 +21,6 @@ npm run build
 
 ## Deployment to GitHub Pages
 
-This project is configured to deploy automatically to GitHub Pages.
-
 ### Initial Setup:
 
 1. Create a new repository on GitHub named `dizzyultadv`
@@ -39,15 +37,31 @@ git push -u origin main
 3. Enable GitHub Pages:
    - Go to your repository settings
    - Navigate to "Pages" in the left sidebar
-   - Under "Source", select "GitHub Actions"
-   - Save the settings
+   - Under "Source", select **"Deploy from a branch"**
+   - Choose branch: **`gh-pages`**
+   - Choose folder: **`/ (root)`**
+   - Click **Save**
 
-### Automatic Deployment:
+### Deploy Your Website:
 
-Once set up, every push to the `main` branch will automatically deploy your site to:
-`https://YOUR_USERNAME.github.io/dizzyultadv/`
+After the initial setup, deploy your website with:
 
-The GitHub Actions workflow will handle the build and deployment automatically.
+```bash
+npm install
+npm run deploy
+```
+
+This will:
+1. Build your project
+2. Deploy it to the `gh-pages` branch
+3. Your site will be available at: `https://YOUR_USERNAME.github.io/dizzyultadv/`
+
+### Future Updates:
+
+Every time you make changes:
+1. Commit your changes: `git add . && git commit -m "Your message"`
+2. Push to main: `git push`
+3. Deploy: `npm run deploy`
 
 ## Images
 
