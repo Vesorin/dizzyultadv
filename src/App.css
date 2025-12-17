@@ -13,7 +13,7 @@
 
 /* Header Section */
 .header {
-  background: url('/images/Header.Png') lightgray 50% / cover no-repeat;
+  background: url('/dizzyultadv/images/Header.Png') lightgray 50% / cover no-repeat;
   background-color: #87CEEB; /* Light blue fallback */
   padding: var(--sds-size-space-4000, 40px) var(--sds-size-space-600, 60px);
   display: flex;
@@ -91,7 +91,7 @@
 /* Main Content Section */
 .main-content {
   flex: 1;
-  background: url('/images/BackgroundMain.png') lightgray 50% / cover no-repeat;
+  background: url('/dizzyultadv/images/BackgroundMain.png') lightgray 50% / cover no-repeat;
   background-color: #8B7355; /* Brown fallback */
   display: flex;
   height: 515px;
