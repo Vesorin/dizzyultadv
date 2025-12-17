@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import LevelCard from '../components/LevelCard'
 import '../styles/LevelsPage.css'
@@ -11,9 +11,18 @@ function LevelsPage() {
     navigate('/achievements')
   }
   
-  const handleDailyClick = () => {
-    console.log('Daily button clicked!')
-    navigate('/daily')
+  const handleChallengeClick = (e) => {
+    if (e) {
+      e.preventDefault()
+      e.stopPropagation()
+    }
+    console.log('Challenge button clicked - navigating to /daily')
+    try {
+      navigate('/daily')
+    } catch (err) {
+      console.error('Navigation failed, using window.location:', err)
+      window.location.href = '/dizzyultadv/daily'
+    }
   }
   
   const levels = [
@@ -136,13 +145,13 @@ function LevelsPage() {
               <span className="search-icon">🔍</span>
             </div>
             <div className="nav-buttons">
-              <Link 
-                to="/daily"
-                className="nav-button"
-                style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}
+              <button 
+                type="button" 
+                className="nav-button challenge-button" 
+                onClick={handleChallengeClick}
               >
-                <span>✓</span> Daily
-              </Link>
+                <span>✓</span> Challenge
+              </button>
               <button type="button" className="nav-button">Levels completed</button>
               <button 
                 type="button" 

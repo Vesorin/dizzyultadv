@@ -279,6 +279,11 @@
   pointer-events: none;
 }
 
+.challenge-button {
+  z-index: 10 !important;
+  position: relative;
+}
+
 /* Levels Grid */
 .levels-grid {
   display: grid;
