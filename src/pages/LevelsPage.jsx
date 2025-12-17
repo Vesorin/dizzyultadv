@@ -6,6 +6,11 @@ import '../styles/LevelsPage.css'
 
 function LevelsPage() {
   const navigate = useNavigate()
+  
+  const handleAchievementsClick = () => {
+    navigate('/achievements')
+  }
+  
   const levels = [
     {
       levelNumber: 1,
@@ -126,12 +131,18 @@ function LevelsPage() {
               <span className="search-icon">🔍</span>
             </div>
             <div className="nav-buttons">
-              <button className="nav-button">
+              <button type="button" className="nav-button">
                 <span>✓</span> Daily
               </button>
-              <button className="nav-button">Levels completed</button>
-              <button className="nav-button" onClick={() => navigate('/achievements')}>Achievements</button>
-              <button className="nav-button">Review</button>
+              <button type="button" className="nav-button">Levels completed</button>
+              <button 
+                type="button" 
+                className="nav-button" 
+                onClick={handleAchievementsClick}
+              >
+                Achievements
+              </button>
+              <button type="button" className="nav-button">Review</button>
             </div>
           </div>
 

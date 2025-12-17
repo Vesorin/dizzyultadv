@@ -261,6 +261,9 @@
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   white-space: nowrap;
+  pointer-events: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-button:hover {
