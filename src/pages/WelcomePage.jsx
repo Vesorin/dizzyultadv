@@ -9,8 +9,14 @@ function WelcomePage() {
   const handleSubmit = (e) => {
     e.preventDefault()
     e.stopPropagation()
-    console.log('Login submitted - navigating to profile page')
-    navigate('/profile', { replace: false })
+    console.log('Login submitted - navigating to PROFILE page, NOT levels')
+    // Force navigation to profile page
+    try {
+      navigate('/profile')
+    } catch (error) {
+      console.error('Navigation error:', error)
+      window.location.href = '/dizzyultadv/profile'
+    }
   }
 
   return (
@@ -28,7 +34,16 @@ function WelcomePage() {
               className="email-input" 
               defaultValue="tuke.fei.sk@gmail.com"
             />
-            <button type="submit" className="submit-button">Submit</button>
+            <button 
+              type="submit" 
+              className="submit-button"
+              onClick={(e) => {
+                e.preventDefault()
+                handleSubmit(e)
+              }}
+            >
+              Submit
+            </button>
           </form>
         </div>
       </main>
