@@ -52,18 +52,18 @@
 }
 
 .main-title {
-  color: #FFE3C6;
-  text-align: center;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #200;
-  font-family: "Climate Crisis", sans-serif;
-  font-size: var(--sds-typography-title-hero-size, 72px);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: -2.16px;
-  margin: 0;
+ color: #FFE3C6;
+text-align: center;
+text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #200;
+font-family: "Climate Crisis";
+font-size: var(--sds-typography-title-hero-size);
+font-style: normal;
+font-weight: 400;
+line-height: 120%; 
+letter-spacing: -2.16px;
+margin: 0;
 }
 
 .subtitle {
@@ -91,7 +91,7 @@
 /* Main Content Section */
 .main-content {
   flex: 1;
-  background: url('/dizzyultadv/images/backgroundmain.png') lightgray 50% / cover no-repeat;
+  background: url('/dizzyultadv/images/background.png') lightgray 50% / cover no-repeat;
   background-color: #8B7355; /* Brown fallback */
   display: flex;
   height: 515px;
@@ -122,11 +122,12 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #200;
-  font-family: serif;
+  font-family: "Climate Crisis", sans-serif;
   font-size: var(--sds-typography-title-hero-size, 72px);
   font-style: normal;
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -2.16px;
   margin: 0;
 }
 
