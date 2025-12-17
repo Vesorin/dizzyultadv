@@ -10,7 +10,6 @@
   display: flex;
   flex: 1;
   background: url('/dizzyultadv/images/BackgroundMain.png') lightgray 50% / cover no-repeat;
-  background-color: #8B7355; /* Brown fallback */
   min-height: calc(100vh - 200px);
 }
 
