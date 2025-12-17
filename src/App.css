@@ -11,10 +11,9 @@
   flex-direction: column;
 }
 
-/* Header Section */
 .header {
   background: url('/dizzyultadv/images/Header.Png') lightgray 50% / cover no-repeat;
-  background-color: #87CEEB; /* Light blue fallback */
+  background-color: #ebd487; 
   padding: var(--sds-size-space-4000, 40px) var(--sds-size-space-600, 60px);
   display: flex;
   align-items: center;
