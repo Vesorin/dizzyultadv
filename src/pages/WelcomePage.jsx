@@ -8,7 +8,7 @@ function WelcomePage() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    navigate('/levels')
+    navigate('/profile')
   }
 
   return (

@@ -4,6 +4,7 @@ import WelcomePage from './pages/WelcomePage'
 import LevelsPage from './pages/LevelsPage'
 import AchievementsPage from './pages/AchievementsPage'
 import DailyChallengePage from './pages/DailyChallengePage'
+import ProfilePage from './pages/ProfilePage'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <BrowserRouter basename="/dizzyultadv">
       <Routes>
         <Route path="/" element={<WelcomePage />} />
+        <Route path="/profile" element={<ProfilePage />} />
         <Route path="/levels" element={<LevelsPage />} />
         <Route path="/achievements" element={<AchievementsPage />} />
         <Route path="/daily" element={<DailyChallengePage />} />
